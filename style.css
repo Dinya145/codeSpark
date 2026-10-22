@@ -47,5 +47,64 @@ textarea{min-height:120px;resize:vertical}
 .footer{background:var(--dark);color:#fff;padding:42px 0;margin-top:40px}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}.footer a{color:#d8b4fe}
 
-/* МОБИЛЬНЫЕ СТИЛИ НАМЕРЕННО ОТСУТСТВУЮТ.
-   Проект предназначен для практической по адаптивной верстке. */
+
+
+
+@media (max-width: 768px) {
+  .header-inner { 
+    flex-direction: column; 
+    text-align: center; 
+    gap: 15px;
+    padding: 15px 0;
+  }
+  .main-nav ul { 
+    flex-direction: column; 
+    gap: 12px; 
+  }
+  
+  .hero { 
+    padding: 40px 0; 
+  }
+  .hero h1 { 
+    font-size: 32px; 
+  }
+  .hero p {
+    font-size: 16px;
+  }
+  .hero-actions { 
+    flex-direction: column; 
+    width: 100%; 
+  }
+  .btn { 
+    width: 100%; /* Кнопки на весь экран, чтобы удобно нажимать пальцем */
+  }
+  
+  .section { 
+    padding: 40px 0; 
+  }
+  .section-title { 
+    font-size: 26px; 
+  }
+  .section-lead {
+    font-size: 16px;
+  }
+  
+  .cards, .course-list, .team-grid, .footer-grid { 
+    grid-template-columns: 1fr; 
+  }
+  .stats { 
+    grid-template-columns: 1fr; 
+  }
+  
+  .feature-row, .form-row { 
+    flex-direction: column; 
+    gap: 15px; 
+  }
+  .feature { 
+    width: 100%; 
+  }
+  
+  .page-hero h1 { 
+    font-size: 30px; 
+  }
+}
